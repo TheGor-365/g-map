@@ -23,19 +23,25 @@
           <% end %>
 
           <div class="form-group">
-            <%= f.submit "Sign in", class: 'btn btn-success btn-sm mr-2' %>
+            <div class="row ml-1">
+              <%= f.submit "Sign in", class: 'btn btn-success btn-sm mr-2' %>
 
-            <%= button_to account_google_oauth2_omniauth_authorize_path, class: 'btn btn-primary btn-sm mr-2' do %>
-              <i class="fab fa-google"></i> Sign in with Google
-            <% end %>
+              <%= button_to account_google_oauth2_omniauth_authorize_path, class: 'btn btn-primary btn-sm mr-2' do %>
+                <i class="fab fa-google"></i>
+              <% end %>
 
-            <%= button_to account_facebook_omniauth_authorize_path, class: 'btn btn-info btn-sm mr-2' do %>
-              <i class="fab fa-facebook-square"></i> Sign in with Facebook
-            <% end %>
+              <%= button_to account_facebook_omniauth_authorize_path, class: 'btn btn-info btn-sm mr-2' do %>
+                <i class="fab fa-facebook-square"></i>
+              <% end %>
 
-            <%= button_to account_github_omniauth_authorize_path, class: 'btn btn-info btn-sm' do %>
-              <i class="fab fa-github"></i> Sign in with GitHub
-            <% end %>
+              <%= button_to account_github_omniauth_authorize_path, class: 'btn btn-info btn-sm mr-2' do %>
+                <i class="fab fa-github"></i>
+              <% end %>
+
+              <%= button_to account_twitter_omniauth_authorize_path, class: 'btn btn-info btn-sm' do %>
+                <i class="fab fa-twitter"></i>
+              <% end %>
+            </div>
           </div>
 
         <% end %>

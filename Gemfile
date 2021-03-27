@@ -15,10 +15,12 @@ gem 'activerecord-session_store'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem 'omniauth-twitter'
 gem "omniauth-rails_csrf_protection"
 gem 'devise', github: 'heartcombo/devise', branch: 'ca-omniauth-2'
 gem 'gmaps4rails'
 gem 'pg'
+gem 'omniauth'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
